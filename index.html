@@ -1,0 +1,159 @@
+<html>
+	
+	<! hey don't worry about the mess under this text. !>
+	
+	<head>
+		<title>Key Clicker</title>
+		
+		<link rel="icon" type="image/png" href="Images/key1.png" sizes="16x16">
+		
+		<style>
+		
+		body	{
+		background-image: url("Images/bg0.png");
+		}
+		
+		.keys	{
+		margin-left: 40px;
+		}
+		
+		.button		{
+		position: absolute;
+		right: 40px;
+		top: 10px; 
+		width: 170px;
+		}
+		
+		.button0	{
+		left: 1215px;
+		}
+		
+		.toptext	{
+		color: DarkGray;
+		}
+		
+		.topbar	{
+		background-color: #A9A9A9;
+		}
+		
+		.clickerContainer img	{
+		position: relative;
+		transition: all .2s ease-in-out;
+		}
+		
+		.clickerContainer img:hover { transform: scale(1.1)}
+		.clickerContainer img:active { transform: scale(0.99)}
+		
+		
+		.keyContainer {
+		
+		}
+		
+		.key0	{
+		margin-top: 20px;
+		}
+		
+		.keyCount	{
+		color: DarkGray;
+		}
+		
+		.keyCount0	{
+		color: Gray;
+		}
+		
+		.leftTable	{
+		
+		}
+		
+		.clickerContainer0 img	{
+		position: relative;
+		transition: all .2s ease-in-out;
+		}
+		
+		.clickerContainer0 img:hover { transform: scale(1.1)}
+		
+		.shopButton	{
+		background-color: #3b3b3b;
+		border-color: #242424;
+		border-width: 2px;
+		border-style: solid;
+		border-radius: 10px;
+		width: 200px;
+		height: 50px;
+		padding: 4px;
+		margin-bottom: 3px;
+		}
+		
+		.shopButton:hover	{
+			background-color: #787878;
+			transition: all .2s ease-in-out;
+		}
+		
+		.paragraph	{
+		font-size: 25px;
+		margin: 0px;
+		}
+		
+		.cursors	{
+		margin-left: 40px;
+		font-family: Helvetica;
+		font-size: 10px;
+		}
+		
+		</style>
+		
+	</head>
+	
+	<body>
+	
+		<p><i class="toptext">The number of cursors is a little bit bugged and everything else basically. And also this is a copy of Cookie Clicker. (Just do Ctrl + S to Save! I think....)</i></p>
+		
+		<div>
+		<h2> <span class="keyCount"id="keyCount">0</span><span class="keyCount"> Key</span><br /></h2>
+		<h2> <span class="keyCount0"id="keypersecond">0</span> <span class="keyCount0">Key per second</span></h2>
+		</div>
+		
+		<div class="clickerContainer keys">
+		<img class="key0"src="Images/key0.png" width="80px" length="80px" onClick="addKeyAmount(1)"/>
+		</div>
+		
+		<div class="button">
+		<table class="shopButton"onclick="buyCursor()">
+			<tr>
+				<td class=""id="image"><img src="Images/cursor.png" width="25px" length="25px"></td>
+				<td id="nameAndCost">
+					<p class="paragraph"id="amount">Cursor </p>
+					<span>Cost: </span><span id="cursorCost"> 15 </span> Keys <span class="cursors"id="cursors"> 0</span></p>
+				</td>
+				
+				</tr>
+				
+		</table>
+		<table class="shopButton"onclick="buyGrandma()">
+			<tr>
+				<td class=""id="image"><img src="Images/grandma.png" width="30px" length="30px"></td>
+				<td id="nameAndCost">
+					<p class="paragraph"id="amount">Grandma </p>
+					<span>Cost: </span><span id="grandmaCost"> 30 </span> Keys <span class="cursors"id="grandmas"> 0</span></p>
+				</td>
+				
+				</tr>
+				
+		</table>
+		<table class="shopButton"onclick="buyKeyChain()">
+			<tr>
+				<td class=""id="image"><img src="Images/keychain.png" width="25px" length="25px"></td>
+				<td id="nameAndCost">
+					<p class="paragraph"id="amount">Key Chain </p>
+					<span>Cost: </span><span id="keyChainCost"> 50 </span> Keys <span class="cursors"id="keyChains"> 0</span></p>
+				</td>
+				
+				</tr>
+				
+		</table>
+		</div>
+
+		<script src="main1.js"></script>
+	</body>
+
+</html>
